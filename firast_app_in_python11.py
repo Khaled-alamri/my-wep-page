@@ -138,18 +138,65 @@ print(max(3,44,3333,23213))
 #/
 #Calculator 
 
-num1=float(input("please enter your number: "))
-operator=input("please enter the operator: ")
-num2=float(input("please enter second number: "))
-if operator =="+":
-    print(num1+num2)
-elif operator =="-":
-    print(num1-num2)
-elif operator =="*":
-    print(num1*num2)
-elif operator =="/":
-    print(num1/num2)
+#num1=float(input("please enter your number: "))
+#operator=input("please enter the operator: ")
+#num2=float(input("please enter second number: "))
+#if operator =="+":
+   # print(num1+num2)
+##elif operator =="-":
+  #  print(num1-num2)
+#elif operator =="*":
+   # print(num1*num2)
+#elif operator =="/":
+ #   print(num1/num2)
+#else:
+   # print("please try again")
+#/\
+
+#DICTIONARIES 
+
+convert_month={
+    "Jan":"january",
+    "Mar":"march",
+    4:"2022"
+}
+
+print(convert_month["Jan"])
+#thie way for ues output from my dictionrie buat with out error message.
+print(convert_month.get(4,"the value does not exist"))
+#this way with error message .
+print(convert_month.get("khaled",'the value does not exist'))
+#/
+
+#while loop .
+i=1
+while i<=10:
+    i+=1
+    if i==5:
+        continue
+    print(i)
+   
 else:
-    print("please try again")
+    print("the loop end")
+#this way for ues while loop in python.
+#key break is ended the loop   
+#\
+for letter in "khaled":
+    print(letter)
 
+buddeis=["kids","see","ber"]
 
+for buddy in range(len(buddeis)):
+    if buddeis[buddy]=="see":
+        print(buddy,"is the see")
+        break
+    else:
+        print("not found")    
+#this way for ues the for loop with len and break
+for x in range(3,9):
+    if x ==5:
+        continue
+    print(x)
+ #this way for ues continue
+#/
+   
